@@ -14,4 +14,5 @@ When triggering a click on another element with JS, you might (probably should) 
 	if (!$(e.target).is('a')) {
 		$(this).find('a').smartclick(e);
 	}
-```});
+});
+```
