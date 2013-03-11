@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<title>Click</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="jquery.click.js"></script>
+		<style>
+			body { font-family: sans-serif }
+			tbody tr:hover { background: lime }
+		</style>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th>Link</th>
+					<th>Lorem</th>
+					<th>Ipsum</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a href="#">Link</a></td>
+					<td>Lorem</td>
+					<td>Ipsum</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>
+	</body>
+
+	<script>
+		$('tbody tr').click(function(e) {
+			if (!$(e.target).is('a')) {
+				$(this).find('a').smartclick(e);
+			}
+		});
+	</script>
+</html>
