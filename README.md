@@ -10,9 +10,8 @@ When triggering a click on another element with JS, you might (probably should) 
 
 ## How
 
-```$('tbody tr').click(function(e) {
-	if (!$(e.target).is('a')) {
-		$(this).find('a').smartclick(e);
-	}
-});
-```
+	$('tbody tr').click(function(e) {
+		if (!$(e.target).is('a')) {
+			$(this).find('a').smartclick(e);
+		}
+	});
