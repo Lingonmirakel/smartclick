@@ -5,9 +5,9 @@
 		var t = $(this);
 
 		if (event.ctrlKey || event.metaKey || event.which === 2) {
-			window.open(t.attr("href"), "");
+			window.open(t.attr('href'), '');
 		} else {
-			window.location = t.attr("href");
+			window.location = t.attr('href');
 		}
 	}
 }(jQuery));
