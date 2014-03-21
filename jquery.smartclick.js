@@ -1,3 +1,28 @@
+/*
+
+	Use when making otherwise non-clickable elements clickable with JavaScript.
+	Will respect the user's will to open links in new tabs/windows.
+
+	Example usage:
+
+	$(document).on('click mouseup', '.teaser', function(e) {
+		if (!$(e.target).is('a')) {
+			$(this).find('a').smartclick(e);
+		}
+	});
+
+	You probably want something like this in your CSS too:
+
+	.js .teaser {
+		cursor: pointer;
+	}
+
+	.js .teaser:hover a {
+		text-decoration: underline;
+	}
+
+*/
+
 (function ($) {
 	'use strict';
 	
